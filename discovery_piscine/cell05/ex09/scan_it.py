@@ -9,4 +9,4 @@ if (argc == 3):
 	if (kc == 0):
 		print("none")
 	if (kc != 0):
-		print(f"{len(re.findall(sys.argv[1], sys.argv[2]))}")
+		print(f"{kc}")
