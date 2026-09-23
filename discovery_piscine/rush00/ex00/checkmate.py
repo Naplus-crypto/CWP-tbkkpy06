@@ -11,7 +11,7 @@ def checkmate(board: str):
 
     rows = len(lines)
     cols = len(lines[0])
-    
+
     # ตรวจสอบความถูกต้องของตาราง (ต้องเป็นสี่เหลี่ยมผืนผ้า/จัตุรัสที่ขนาดแถวเท่ากัน)
     for line in lines:
         if len(line) != cols:
@@ -25,7 +25,7 @@ def checkmate(board: str):
             char = lines[r][c]
             if char == 'K':
                 if king_pos is not None:
-                    print("Error")  // มี King มากกว่า 1 ตัว
+                    print("Error")  # มี King มากกว่า 1 ตัว
                     return
                 king_pos = (r, c)
 
